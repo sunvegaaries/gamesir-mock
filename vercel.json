@@ -1,5 +1,9 @@
-{
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/api/gsw" }
+﻿{
+  "version": 2,
+  "builds": [
+    { "src": "api/gsw.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/api/gsw" }
   ]
 }
